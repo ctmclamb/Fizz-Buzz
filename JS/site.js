@@ -37,6 +37,11 @@ function fizzbuzz(fizzValue, buzzValue) {
     //initialize return array 
 
     // loop from 1 to 100
+    for (let index = 1; index <= 100; index++) {
+       
+        returnArray.push(i);
+        
+    }
 
     //we need to check the current in three steps
 
