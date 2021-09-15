@@ -39,6 +39,22 @@ function fizzbuzz(fizzValue, buzzValue) {
     // loop from 1 to 100
     for (let index = 1; index <= 100; index++) {
        
+        if (i % fizzValue == 0 && i buzzValue == 0 ) {
+            rerturnArray.push('FizzBuzz');
+        } else if (i % fizzValue == 0) {
+            
+            returnArray.push('fizz');
+
+        } else if ( i % buzzValue  == 0) {
+
+            returnArray.push('Fizz');
+
+            
+        } else{
+            returnArray.push(i);
+
+        }
+
         returnArray.push(i);
         
     }
