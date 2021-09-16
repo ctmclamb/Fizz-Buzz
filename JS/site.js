@@ -70,7 +70,7 @@ function fizzbuzz(fizzValue, buzzValue) {
     //finally if none are divislbe push number into array 
 
 
-    returnarray; 
+    returnArray; 
     
 
 
