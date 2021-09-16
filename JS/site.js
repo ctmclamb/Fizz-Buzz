@@ -1,7 +1,7 @@
 //Get values from fizz and buzz from the user 
 //start the controller function
 
-function getValutes() {
+function getValues() {
 
     //get the user values from the page 
     let fizzValue = document.getElementById('fizzValue').value; 
@@ -40,7 +40,7 @@ function fizzbuzz(fizzValue, buzzValue) {
     // loop from 1 to 100
     for (let index = 1; index <= 100; index++) {
        
-        if (i % fizzValue == 0 && i buzzValue == 0 ) {
+        if (i % fizzValue == 0 && i % buzzValue == 0 ) {
             rerturnArray.push('FizzBuzz');
         } else if (i % fizzValue == 0) {
             returnArray.push('fizz')
@@ -89,9 +89,9 @@ function displayData() {
 // clear the table first 
 tableBody.innerHTML = '';
 
-for (let index = 0; index < array.length; index++) {
+for (let index = 0; index < array.length; index+= 5) {
     
-    let tableRow = document.importNode(templateRow.contentEditable, true);
+    let tableRow = document.importNode(templateRow.content, true);
 
     //grab use the to put into array
 
@@ -102,7 +102,7 @@ for (let index = 0; index < array.length; index++) {
     rowcols[3].textContent.fbData[i+3];
     rowcols[4].textContent.fbData[i+4];
     
-    
+    tableBody.appendChild(tableRow);
 }
 
     //add all the rows to the table 
