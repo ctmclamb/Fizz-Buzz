@@ -20,6 +20,7 @@ if (Number.isInterger(fizzValue) && Number.isInteger(buzzValue)) {
 
 
     //call displayData and write the values to the screen
+    displayData(fbArray);
 
 
 } else {
@@ -42,27 +43,21 @@ function fizzbuzz(fizzValue, buzzValue) {
         if (i % fizzValue == 0 && i buzzValue == 0 ) {
             rerturnArray.push('FizzBuzz');
         } else if (i % fizzValue == 0) {
-            
-            returnArray.push('fizz');
-
+            returnArray.push('fizz')
         } else if ( i % buzzValue  == 0) {
 
-            returnArray.push('Fizz');
-
-            
+            returnArray.push('Fizz');   
         } else{
             returnArray.push(i);
 
         }
 
-        returnArray.push(i);
+        
         
     }
 
     //we need to check the current in three steps
-
     // check to see if its divisble by both 
-
     // if so push fizzbuzz in array and not the number 
 
     //check to see if divisble by fizzValue 
@@ -81,10 +76,36 @@ function fizzbuzz(fizzValue, buzzValue) {
 
 }
 
-
+//loop over the array and create a tablerow for each item.
 function displayData() {
 
+    //get the table body element from the page
+    let tableBody = document.getElementById('results ');
 
+    //get the template itself 
+
+    let templateRow = document.getElementById('fbTemplate');
+
+// clear the table first 
+tableBody.innerHTML = '';
+
+for (let index = 0; index < array.length; index++) {
+    
+    let tableRow = document.importNode(templateRow.contentEditable, true);
+
+    //grab use the to put into array
+
+    let rowcols = tableRow.querSelectorAll('td');
+    rowcols[0].textContent.fbData[i];
+    rowcols[1].textContent.fbData[i+1];
+    rowcols[2].textContent.fbData[i+2];
+    rowcols[3].textContent.fbData[i+3];
+    rowcols[4].textContent.fbData[i+4];
+    
+    
+}
+
+    //add all the rows to the table 
 }
 
  
