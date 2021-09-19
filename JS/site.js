@@ -13,7 +13,7 @@ function getValues() {
 
 //check that the numbers are intergers 
 
-if (Number.isInterger(fizzValue) && Number.isInteger(buzzValue)) {
+if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue)) {
     
     //we call fizzbuzz 
     let fbArray = fizzbuzz(fizzValue,buzzValue);
@@ -32,13 +32,13 @@ if (Number.isInterger(fizzValue) && Number.isInteger(buzzValue)) {
 // do fizz buzz function 
 function fizzbuzz(fizzValue, buzzValue) {
 
-    let rerturnArray = [];
+    let returnArray = [];
 
 
     //initialize return array 
 
     // loop from 1 to 100
-    for (let index = 1; index <= 100; index++) {
+    for (let i = 1; i <= 100; i++) {
        
         if (i % fizzValue == 0 && i % buzzValue == 0 ) {
             rerturnArray.push('FizzBuzz');
@@ -46,7 +46,7 @@ function fizzbuzz(fizzValue, buzzValue) {
             returnArray.push('fizz')
         } else if ( i % buzzValue  == 0) {
 
-            returnArray.push('Fizz');   
+            returnArray.push('Buzz');   
         } else{
             returnArray.push(i);
 
@@ -70,7 +70,7 @@ function fizzbuzz(fizzValue, buzzValue) {
     //finally if none are divislbe push number into array 
 
 
-    returnArray; 
+   return returnArray; 
     
 
 
@@ -89,18 +89,18 @@ function displayData() {
 // clear the table first 
 tableBody.innerHTML = '';
 
-for (let index = 0; index < array.length; index+= 5) {
+for (let index = 0; index < fbArray.length; index+= 5) {
     
     let tableRow = document.importNode(templateRow.content, true);
 
     //grab use the to put into array
 
     let rowcols = tableRow.querSelectorAll('td');
-    rowcols[0].textContent.fbData[i];
-    rowcols[1].textContent.fbData[i+1];
-    rowcols[2].textContent.fbData[i+2];
-    rowcols[3].textContent.fbData[i+3];
-    rowcols[4].textContent.fbData[i+4];
+    rowcols[0].textContent=fbArray[index];
+    rowcols[1].textContent=fbArray[index+1];
+    rowcols[2].textContent=fbArray[index+2];
+    rowcols[3].textContent=fbArray[index+3];
+    rowcols[4].textContent=fbArray[index+4];
     
     tableBody.appendChild(tableRow);
 }
