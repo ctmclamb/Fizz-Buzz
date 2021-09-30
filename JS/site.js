@@ -16,7 +16,7 @@ function getValues() {
 if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue)) {
     
     //we call fizzbuzz 
-    let fbArray = fizzbuzz(fizzValue,buzzValue);
+    let fbArray = fizzbuzzB(fizzValue,buzzValue);
 
 
     //call displayData and write the values to the screen
@@ -82,8 +82,8 @@ function fizzbuzzB(fizzValue,buzzValue) {
     let Fizz = False; 
     let Buzz = False; 
 
-     for (let i = 1; index <= 100 i++) {
-         const element = array[];
+     for (let i = 1; i <= 100; i++) {
+         const element = returArray =[];
          
          Fizz = i% fizzValue == 0; 
          Buzz = i% buzzValue == 0;
@@ -92,7 +92,7 @@ function fizzbuzzB(fizzValue,buzzValue) {
          {
              case Fizz && Buzz:{
                  returnArray.push("FizzBuzz");
-                 break 
+                 break; 
              }
 
              case Fizz:{
