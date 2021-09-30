@@ -76,6 +76,47 @@ function fizzbuzz(fizzValue,buzzValue) {
 
 }
 
+function fizzbuzzB(fizzValue,buzzValue) {
+    
+    let returnArray =[];
+    let Fizz = False; 
+    let Buzz = False; 
+
+     for (let i = 1; index <= 100 i++) {
+         const element = array[];
+         
+         Fizz = i% fizzValue == 0; 
+         Buzz = i% buzzValue == 0;
+
+         switch(true)
+         {
+             case Fizz && Buzz:{
+                 returnArray.push("FizzBuzz");
+                 break 
+             }
+
+             case Fizz:{
+                 returnArray.push("Fizz");
+                 break; 
+
+             }
+             case Buzz:{
+                 returnArray.push("Buzz");
+                 break;
+             }
+
+             default:{
+                 returnArray.push(i);
+                 break; 
+             }
+         }
+         
+     }
+
+    return returnArray
+}
+
+
 //loop over the array and create a tablerow for each item.
 function displayData(fbArray) {
 
