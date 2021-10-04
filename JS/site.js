@@ -79,8 +79,8 @@ function fizzbuzz(fizzValue,buzzValue) {
 function fizzbuzzB(fizzValue,buzzValue) {
     
     let returnArray =[];
-    let Fizz = False; 
-    let Buzz = False; 
+    let Fizz = false; 
+    let Buzz = false; 
 
      for (let i = 1; i <= 100; i++) {
          const element = returArray =[];
