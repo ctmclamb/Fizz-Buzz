@@ -16,7 +16,7 @@ function getValues() {
 if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue)) {
     
     //we call fizzbuzz 
-    let fbArray = fizzbuzzB(fizzValue,buzzValue);
+    let fbArray = fizzbuzzC(fizzValue,buzzValue);
 
 
     //call displayData and write the values to the screen
@@ -115,6 +115,23 @@ function fizzbuzzB(fizzValue,buzzValue) {
 
     return returnArray
 }
+
+function fizzbuzzC(fizzValue,buzzValue) {
+
+    let returnArray =[];
+
+    for (let i = 1; i < 100; i++) {
+        
+        let value = ((i % fizzValue == 0 ? 'Fizz' : '') + (i % buzzValue == 0 ? 'Buzz' : '') || i );     
+        returnArray.push(value);
+    }
+
+
+    return returnArray; 
+
+}
+
+
 
 
 //loop over the array and create a tablerow for each item.
