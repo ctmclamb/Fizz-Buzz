@@ -83,7 +83,7 @@ function fizzbuzzB(fizzValue,buzzValue) {
     let Buzz = false; 
 
      for (let i = 1; i <= 100; i++) {
-         const element = returArray =[];
+         
          
          Fizz = i% fizzValue == 0; 
          Buzz = i% buzzValue == 0;
